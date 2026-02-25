@@ -72,3 +72,35 @@ html, body, #root {
   padding: 40px;
   overflow-y: auto;
 }
+
+/* Upload Page */
+.upload-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.upload-container input[type="file"] {
+  padding: 8px;
+  background-color: white;
+}
+
+.upload-container button {
+  padding: 10px;
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.upload-container button:hover {
+  background-color: #374151;
+}
+
+.file-name {
+  font-size: 0.9rem;
+  color: #555;
+}
