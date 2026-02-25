@@ -9,6 +9,7 @@ import Upload from "./pages/Upload";
 function App() {
   const [activePage, setActivePage] = useState("home");
 
+  // rendered content
   const renderContent = () => {
     switch (activePage) {
       case "home":
