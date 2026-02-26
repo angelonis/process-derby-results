@@ -36,7 +36,14 @@ function App() {
       {/* Sidebar */}
       <aside className="sidebar">
         <div className="sidebar-header">
-          <h2>Pack 11 Coventry</h2>
+          <a
+            href="https://www.pack11coventry.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header-link"
+          >
+            <h2>Pack 11 Coventry</h2>
+          </a>
         </div>
 
         <nav className="menu">
