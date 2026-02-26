@@ -6,8 +6,11 @@ import Home from "./pages/Home";
 import Results from "./pages/Results";
 import Upload from "./pages/Upload";
 
+
+
 function App() {
   const [activePage, setActivePage] = useState("home");
+  const [resultsData, setResultsData] = useState(null);
 
   // rendered content
   const renderContent = () => {
@@ -15,9 +18,14 @@ function App() {
       case "home":
         return <Home />;
       case "upload":
-        return <Upload />;
+        return <Upload
+      onResultsReady={(data) => {
+        setResultsData(data);
+        setActivePage("results"); // auto navigate
+      }}
+    />;
       case "results":
-        return <Results />;
+        return <Results data={resultsData} />;
       default:
         return <Home />;
     }

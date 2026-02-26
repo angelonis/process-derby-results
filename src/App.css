@@ -104,3 +104,9 @@ html, body, #root {
   font-size: 0.9rem;
   color: #555;
 }
+
+.highlight {
+  background-color: gold;
+  font-weight: bold;
+  padding: 4px;
+}
