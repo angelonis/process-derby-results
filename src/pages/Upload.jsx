@@ -58,7 +58,27 @@ function Upload({ onResultsReady }) {
   return (
     <>
       <h1>Upload Results File</h1>
-
+      <br></br>
+      <h2>Assumptions:</h2>
+      <p>This application assumes the following to be true of the spreadsheet you are uploading in order to process successfully.</p>
+      <ul>
+        <li>.XLSX formatted file.</li>
+        <li><b>Siblings den is spelt "Akela".</b>This is important because these scouts will not be eligible to be awarded top pack racer.</li>
+        <li>First tab is to contain the following headers on row 1:
+          <ul>
+            <li>First Name</li>
+            <li>Last Name</li>
+            <li>Den</li>
+            <li>Passed? (this column states whether the scout raced or not)</li>
+          </ul>
+        </li>
+        <li>Second tab is to contain the following headers on row <b>3</b>:
+          <ul>
+            <li>Name</li>
+            <li>Average (this column will contain the average overall time and will be used to determine the ranking in the dens.)</li>
+          </ul>
+        </li>
+      </ul>
       <div className="upload-container">
         <input
           type="file"

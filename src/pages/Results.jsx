@@ -1,6 +1,10 @@
 function Results({ data }) {
   if (!data) {
-    return <p>No results loaded yet.</p>;
+    return (<div>
+      <h1>Results</h1>
+      <p>Upload your file to see your results.</p>
+      <br></br>
+    </div>)
   }
 
   const { topFive, denGroups, akela, unassigned } = data;
